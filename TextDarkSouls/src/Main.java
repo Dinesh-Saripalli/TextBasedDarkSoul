@@ -22,12 +22,15 @@ public class Main {
             {"Bed", "Toilet", "Window", "Wall", "Ceiling"}
     };
     private static String[][] descriptions = {
-            {"bed desc", "The seat and body are covered in rust. \nInside are several loose lead pipes", "window desc", "wall desc", "ceiling desc"}
+            {"bed desc", "The seat and body are covered in rust.", "window desc", "wall desc", "ceiling desc"}
+    };
+    private static String[][] investigations = {
+            {"bed invest", "Inside the toilet back are several loose lead bars", "window invest", "wall invest", "ceiling invest"}
     };
     private static String[][] objects = {
             {"File", "Lead Pipe", "", "", ""}
     };
-    
+
     private static ArrayList<String> inventory = new ArrayList<String>();
 
 
@@ -44,16 +47,42 @@ public class Main {
         System.out.println(word);
     }
 
-    public static void input() {
-        String line = scan.nextLine();
-        String pt1 = line;
-        String pt2 = " ";
-        int num = line.indexOf(" ");
-        if(num != -1){
-            pt1 = line.substring(0, num);
-            pt2 = line.substring(num + 1, line.length());
+    public static boolean contains(String[] array, String word) {
+        for (String string : array) {
+            if(string.equals(word)) {
+                return true;
+            }
         }
-        switch(pt1) {
+
+        return false;
+    }
+
+    public static void input() {
+        String line = scan.nextLine().toUpperCase();
+        String pt1 = line;
+        scan2 = new Scanner(line);
+        if(pt1.matches("(.*)EXPLORE(.*)")) {
+            Explore();
+        }
+        else{
+            invalid();
+        }
+
+        if(pt1.matches("(.*)GO(.*)") || pt1.matches("(.*)MOVE(.*)"))  {
+            while(scan2.hasNext()) {
+                String next = scan2.next();
+                if(contains(locations[pos], next)){
+                    GoTo(next);
+                    Investigate();
+                }
+            }
+        }
+        else{
+            invalid();
+        }
+
+
+        /*switch(pt1) {
             case("Explore"): Explore(); break;
             case("GoTo"): GoTo(pt2); break;
             case("Investigate"): Investigate(); break;
@@ -61,7 +90,7 @@ public class Main {
             case("Use"): Use(pt2); break;
             default: invalid();
         }
-
+        */
     }
 
     public static void invalid(){
@@ -74,19 +103,15 @@ public class Main {
     }
 
     public static void Investigate() {
-        pt(descriptions[pos][localPos]);
+        pt(investigations[pos][localPos]);
     }
 
     public static void GoTo(String word) {
-        boolean beans = true;
         for(int i = 0; i < locations[pos].length; i++){
             if(locations[pos][i].equals(word)) {
                 localPos = i;
-                beans = false;
+                pt(descriptions[pos][localPos]);
             }
-        }
-        if(beans) {
-            invalid();
         }
     }
 
@@ -116,6 +141,5 @@ public class Main {
                 }
         }
     }
-
 
 }
