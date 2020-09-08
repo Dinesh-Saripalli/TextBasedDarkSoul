@@ -13,3 +13,7 @@ You look over at your cell's toilet. You see you didn't flush last time, but in 
 
 //Cell - Vents
 Above your bed you see an air duct. It runs throughout the whole prison, but your cell only has a single bend of a duct leaking in.
+/When shank has been crafted
+Above your bed you see an air duct. It runs throughout the whole prison, so it'd be the perfect way to escape! You cut a hole in the duct and crawl in. You barely fit in, but you're still able to move.
+
+//Cell - Poster
