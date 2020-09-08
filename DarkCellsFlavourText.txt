@@ -1,0 +1,15 @@
+//Beginning
+You've been on death row for a while now. You can't remember how long exactly, but today is finally the day. In [time], your capital punishment will be given.
+Lying on your cell's cot, you decide to do stop moping and actually do something with your limited time remaining.
+-You can examine various things in your cell: your cot, the toilet, the vents, a poster, the sink, and the cell door-
+
+//Cell - Cot
+Under your pillow, you find the old file you tried using to escape a while back. You hold on to it for old time's sake.
+-File obtained-
+
+//Cell - Toilet
+You look over at your cell's toilet. You see you didn't flush last time, but in flushing, the lever fell out. You now remeber why you didn't flush last time.
+-Flush lever obtained-
+
+//Cell - Vents
+Above your bed you see an air duct. It runs throughout the whole prison, but your cell only has a single bend of a duct leaking in.
