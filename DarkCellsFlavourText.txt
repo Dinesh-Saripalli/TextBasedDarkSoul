@@ -8,12 +8,22 @@ Under your pillow, you find the old file you tried using to escape a while back.
 -File obtained-
 
 //Cell - Toilet
-You look over at your cell's toilet. You see you didn't flush last time, but in flushing, the lever fell out. You now remeber why you didn't flush last time.
+You look over at your cell's toilet. You see you didn't flush last time, but in flushing, the lever fell out. You now remember why you didn't flush last time.
 -Flush lever obtained-
 
 //Cell - Vents
 Above your bed you see an air duct. It runs throughout the whole prison, but your cell only has a single bend of a duct leaking in.
-/When shank has been crafted
+//When shank has been crafted
 Above your bed you see an air duct. It runs throughout the whole prison, so it'd be the perfect way to escape! You cut a hole in the duct and crawl in. You barely fit in, but you're still able to move.
 
 //Cell - Poster
+There's a poster in your cell you've never seen before. It's held on very poorly with masking tape. Maybe there's something behind it?
+You rip the poster off, only to see the same wall you've been looking at for however long you've been in this prison.
+
+//Cell - Sink
+Next to the toilet is a sink. On the rim of that sink is a toothbrush. A very frayed toothbrush. The prison guards never bothered to change the prisoners' toothbrushes regularly.
+-Toothbrush obtained-
+
+//Cell - Cell Door
+You look out your cell door and see what the rest of the prison looks like, along with the other prisoners in their on cells, all being patrolled by guard scanning the hall.
+-You can talk to the guard or a fellow prisoner on the opposite side of the hall-
