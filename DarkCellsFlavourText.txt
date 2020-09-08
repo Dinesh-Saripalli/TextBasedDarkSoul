@@ -27,3 +27,7 @@ Next to the toilet is a sink. On the rim of that sink is a toothbrush. A very fr
 //Cell - Cell Door
 You look out your cell door and see what the rest of the prison looks like, along with the other prisoners in their on cells, all being patrolled by guard scanning the hall.
 -You can talk to the guard or a fellow prisoner on the opposite side of the hall-
+
+//Cell - When you have both File and Toothbrush
+You tried using the file to grind down the cell bars, but what if you ground something else? You look at the flat edge of your toothbrush and file it to a sharp edge.
+-Shank obtainted-
