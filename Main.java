@@ -128,6 +128,7 @@ public class Main {
                     valid = true;
                     if(!inventory.contains(next)) {
                         inventory.add(next);
+                        pt("You took the " + Areas[pos].contents[localPos].item);
                     }
                     else{
                         pt("You already took that item idiot");
