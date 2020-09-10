@@ -120,7 +120,11 @@ public class Main {
             boolean valid = false;
             while(scan2.hasNext()) {
                 String next = scan2.next();
-                if(next.equals(Areas[pos].contents[localPos].item.toUpperCase())){
+                if (Areas[pos].contents[localPos].item == null) {
+                    pt("There is no item idiot");
+                    valid = true;
+                    break;
+                } else if (next.equals(Areas[pos].contents[localPos].item.toUpperCase())) {
                     valid = true;
                     if(!inventory.contains(next)) {
                         inventory.add(next);
