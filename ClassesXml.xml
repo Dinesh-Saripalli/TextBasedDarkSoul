@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Scenes>
+	<Scene  id="Vents"
+			desc="Vents description">
+			<Location></Location>
+	</Scene>
+	
+	<Scene id="Main Cell"
+		   desc="You are sitting sitting on a bed in the far left corner. 
+		   In the opposite corner is a toilet. 
+		   A metal door with a slit opening is the only entrance. 
+		   On the back wall is a window covered with bars." >
+			<Location   name="Bed"
+						type="standard"
+					    desc = "Bed Description"
+					    invest = "Bed Investigation"
+					    item = "File">
+			</Location>
+			<Location   name="Toilet"
+					    type="standard"
+					    desc = "Toilet Description"
+					    invest = "Toilet Investigation"
+					    item = "Lead_Pipe">
+			</Location>
+			<Location   name="Window"
+						type="window"
+					    desc = "Window Description"
+					    invest = "Window Investigation"
+					    item = "none">
+			</Location>
+			<Location   name="Wall"
+						type="standard"
+					    desc = "Wall Description"
+					    invest = "Wall Investigation"
+					    item = "none">
+			</Location>
+			<Location   name="Door"
+						type="standard"
+					    desc = "Door Description"
+					    invest = "Door Investigation"
+					    item = "none">
+			</Location>
+			<Location   name="Ceiling"
+						type="standard"
+					    desc = "Ceiling Description"
+					    invest = "Ceiling Investigation"
+					    item = "none">
+			</Location>
+	</Scene>
+		<Scene id="Cafeteria"
+		   desc="Cafeteria description" >
+			<Location   name="Kitchen"
+					    type="standard"
+					    desc="Kitchen Description"
+					    invest="Kitchen Investigation"
+					    item="none">
+			</Location>
+			<Location   name="Window"
+						type="standard"
+					    desc = "CafeWindow Description"
+					    invest = "CafeWindow Investigation"
+					    item = "none">
+			</Location>
+			<Location   name="Table"
+						type="standard"
+					    desc = "Table Description"
+					    invest = "Table Investigation"
+					    item = "none">
+			</Location>
+	</Scene>
+	
+</Scenes>
