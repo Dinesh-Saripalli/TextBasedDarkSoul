@@ -12,14 +12,14 @@
 		   On the back wall is a window covered with bars." >
 			<Location   name="Bed"
 						type="standard"
-					    desc = "Bed Description"
-					    invest = "Bed Investigation"
+					    desc = "Your bed is a stained mattress. A single pillow rests on it."
+					    invest = "Under your pillow, you find the old file you tried using to escape a while back."
 					    item = "File">
 			</Location>
 			<Location   name="Toilet"
 					    type="standard"
-					    desc = "Toilet Description"
-					    invest = "Toilet Investigation"
+					    desc = "The toilet is covered in rust. It hasn’t been cleaned in a long time."
+					    invest = "You look over at your cell's toilet. You see you didn't flush last time, but in flushing, the lever fell out. You now remember why you didn't flush last time."
 					    item = "Lead_Pipe">
 			</Location>
 			<Location   name="Window"
@@ -30,21 +30,21 @@
 			</Location>
 			<Location   name="Wall"
 						type="standard"
-					    desc = "Wall Description"
-					    invest = "Wall Investigation"
+					    desc = "There's a poster in your cell you've never seen before. It's held on very poorly with masking tape. Maybe there's something behind it?"
+					    invest = "You rip the poster off, only to see the same wall you've been looking at for however long you've been in this prison."
 					    item = "none">
 			</Location>
 			<Location   name="Door"
 						type="standard"
-					    desc = "Door Description"
-					    invest = "Door Investigation"
+					    desc = "A solid metal door blocks your passage."
+					    invest = "You look out your cell door and see what the rest of the prison looks like, along with the other prisoners in their own cells, all being patrolled by a guard scanning the hall."
 					    item = "none">
 			</Location>
-			<Location   name="Ceiling"
+			<Location   name="Sink"
 						type="standard"
-					    desc = "Ceiling Description"
-					    invest = "Ceiling Investigation"
-					    item = "none">
+					    desc = "Next to the toilet is a sink."
+					    invest = "On the rim of that sink is a toothbrush. A very frayed toothbrush. The prison guards never bothered to change the prisoners' toothbrushes regularly."
+					    item = "Toothbrush">
 			</Location>
 	</Scene>
 		<Scene id="Cafeteria"
