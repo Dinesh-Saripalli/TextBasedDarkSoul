@@ -5,21 +5,24 @@
 			<Location></Location>
 	</Scene>
 	
-	<Scene id="Main Cell"
-		   desc="You are sitting sitting on a bed in the far left corner. 
-		   In the opposite corner is a toilet. 
-		   A metal door with a slit opening is the only entrance. 
-		   On the back wall is a window covered with bars." >
+	<Scene id="Cell"
+		   desc="A bed is in the far left corner. In the opposite corner is a toilet. A metal door with a slit opening is the only entrance.Above is an air vent.To the right of the toilet is a sink.Above the Toilet is a Poster.On the back wall is a window covered with bars." >
+			<Location   name="Vent"
+						type="vent"
+					    desc = "The air duct is covered in thin metal strips."
+					    invest = "It looks to run throughout the whole prison, but your cell only has a single bend of a duct leaking in."
+					    item = "none">
+			</Location>
 			<Location   name="Bed"
-						type="standard"
-					    desc = "Bed Description"
-					    invest = "Bed Investigation"
+						type="bed"
+					    desc = "Your bed is a stained mattress. A single pillow rests on it."
+					    invest = "Under your pillow, you find the old file you tried using to escape a while back. "
 					    item = "File">
 			</Location>
 			<Location   name="Toilet"
 					    type="standard"
-					    desc = "Toilet Description"
-					    invest = "Toilet Investigation"
+					    desc = "The seat is covered in rust. It hasn't been cleaned in ages."
+					    invest = "Inside are several loose lead pipes."
 					    item = "Lead_Pipe">
 			</Location>
 			<Location   name="Window"
@@ -28,45 +31,117 @@
 					    invest = "Window Investigation"
 					    item = "none">
 			</Location>
-			<Location   name="Wall"
+			<Location   name="Sink"
 						type="standard"
-					    desc = "Wall Description"
-					    invest = "Wall Investigation"
+					    desc = "The sink is covered in rust. The glass mirror above is cracked."
+					    invest = "On the rim is a toothbrush. There's no paste."
+					    item = "Toothbrush">
+			</Location>
+			<Location   name="Poster"
+						type="standard"
+					    desc = "The poster is held on very poorly with masking tape. Maybe there's something behind it?"
+					    invest = "Behind the poster is a camera. BIG BROTHER IS WATCHING."
 					    item = "none">
 			</Location>
 			<Location   name="Door"
 						type="standard"
-					    desc = "Door Description"
-					    invest = "Door Investigation"
-					    item = "none">
-			</Location>
-			<Location   name="Ceiling"
-						type="standard"
-					    desc = "Ceiling Description"
-					    invest = "Ceiling Investigation"
+					    desc = "A solid metal door blocks your passage."
+					    invest = "In the hall you see similar cells. A guard is pacing back and forth."
 					    item = "none">
 			</Location>
 	</Scene>
 		<Scene id="Cafeteria"
-		   desc="Cafeteria description" >
+		   desc="You drop into the cafeteria. Tables line the mess hall, to the side is the door to the kitchen. A single window lines the wall opposite the kitchen." >
+			<Location   name="Vent"
+						type="vent"
+					    desc = "The air duct is covered in thin metal strips."
+					    invest = "It looks to run throughout the whole prison, but your cell only has a single bend of a duct leaking in."
+					    item = "none">
+			</Location>
 			<Location   name="Kitchen"
 					    type="standard"
-					    desc="Kitchen Description"
-					    invest="Kitchen Investigation"
-					    item="none">
+					    desc="You enter the kitchen. Cooking tools are scattered around. A pantry is in one corner."
+					    invest="The pantry is full of cans of spam. You finds eating utensiles in a sink. On a counter is a sturdy spoon."
+					    item="spoon">
 			</Location>
 			<Location   name="Window"
-						type="standard"
-					    desc = "CafeWindow Description"
-					    invest = "CafeWindow Investigation"
+						type="kitchenWindow"
+					    desc = "A slightly cracked window is the only portal to the outside world."
+					    invest = "The glass is brittle, and the window is big enough to crawl through."
 					    item = "none">
 			</Location>
 			<Location   name="Table"
 						type="standard"
-					    desc = "Table Description"
-					    invest = "Table Investigation"
+					    desc = "A plastic table stands in the center of the cafeteria. It is covered in stains and food crumbs."
+					    invest = "One of the wheels attached to the table legs is loose."
+					    item = "wheel">
+			</Location>
+	</Scene>
+		<Scene id="Office"
+		   desc="You are in the Warden's Office. He appears to be out. In front of you is a large desk. On top of the desk is a large red button. On one of the walls is a picture." >
+			<Location   name="Vent"
+						type="vent"
+					    desc = "The air duct is covered in thin metal strips."
+					    invest = "It looks to run throughout the whole prison, but your cell only has a single bend of a duct leaking in."
+					    item = "none">
+			</Location>
+			<Location   name="Desk"
+					    type="desk"
+					    desc="The desk is made of fine wood, covered with important documents."
+					    invest="The drawers are full of more documents, but one of them contains a key."
+					    item="key">
+			</Location>
+			<Location   name="Picture"
+						type="picture"
+					    desc = "A frame containing a picture of the warden hangs on the wall."
+					    invest = "Behind it is a safe!"
+					    item = "none">
+			</Location>
+			<Location   name="Button"
+						type="button"
+					    desc = "A large red button sits on the desk. It is surrounded by a glass case."
+					    invest = "Underneath the button in small letters is the word 'PANIC'."
 					    item = "none">
 			</Location>
 	</Scene>
+		<Scene id="Gym"
+		   desc="You drop into the gym. Weight sets fill most of the space, but in one corner is a closet with sports equipment." >
+			<Location   name="Vent"
+						type="vent"
+					    desc = "The air duct is covered in thin metal strips."
+					    invest = "It looks to run throughout the whole prison, but your cell only has a single bend of a duct leaking in."
+					    item = "none">
+			</Location>
+			<Location   name="Weight_Room"
+					    type="standard"
+					    desc="Racks of weights and weight benches cover the room."
+					    invest="One of the weights is just 5 pounds. It might be useful."
+					    item="weight">
+			</Location>
+			<Location   name="Closet"
+						type="standard"
+					    desc = "Inside the closet are racks of sports equipment."
+					    invest = "One of the barrels is full of wooden baseball bats."
+					    item = "bat">
+			</Location>
+	</Scene>
+		<Scene  id="Cells"
+			desc="">
+			<Location></Location>
+	</Scene>
 	
+		<Scene  id="Library"
+			desc="">
+			<Location></Location>
+	</Scene>
+	
+		<Scene  id="Break_Room"
+			desc="">
+			<Location></Location>
+	</Scene>
+	
+		<Scene  id="Roof"
+			desc="">
+			<Location></Location>
+	</Scene>
 </Scenes>

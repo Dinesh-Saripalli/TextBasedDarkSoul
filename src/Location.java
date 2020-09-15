@@ -4,6 +4,8 @@ public class Location {
     protected String investigation;     //What a 'closer look' reveals
     protected String item;              //item contained in location  (change to array for multiple items?)
     protected boolean gameEnd = false;
+    protected boolean itemTaken = false;
+
     //Universal methods
     public static void pt(String word) {
         System.out.println(word);

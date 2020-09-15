@@ -16,6 +16,4 @@ public class Window extends Location{
         }
     }
 
-
-
 }
